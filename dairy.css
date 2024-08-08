@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    color: #444; 
+}
+
+header {
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Link Color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e; 
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section {
+    background: url(./images/dairy.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.658);
+    background-blend-mode: overlay;
+    border-radius: 10px;
+    min-height: 50vh;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 5px #e74c3c; 
+}
+
+.section-description {
+    color: #ffffff; 
+}
+
+.section-image {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.dairy-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dairy-product {
+    width: calc(25% - 20px);
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dairy-product img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dairy-product h3,
+.dairy-product p {
+    margin-bottom: 10px;
+}
+
+.dairy-product .add-to-cart {
+    padding: 8px 20px;
+    background-color: #3498db; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dairy-product .add-to-cart:hover {
+    background-color: #2980b9; 
+}
+footer {
+    background-color: #2c3e50;  
+    color: #ecf0f1; 
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #ecf0f1; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #ecf0f1; 
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #bdc3c7; 
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #bdc3c7; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .intro-section {
+        margin-bottom: 20px;
+    }
+
+    .dairy-product {
+        width: calc(50% - 20px);
+    }
+
+    .dairy-product img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo span {
+        font-size: 20px;
+    }
+
+    .dairy-product {
+        width: calc(100% - 20px);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

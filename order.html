@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart - Order Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="./images/logo.webp" alt="SuperMart Logo">
+            <span>SuperMart</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dairy.html">Dairy Products</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="cosmetics.html">Cosmetics and Skin Care</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="loyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="order-form">
+            <h2 class="section-title">Order Form</h2>
+            <form class="order-form">
+                <h3>Products</h3>
+                     
+                        
+                        <section id="fruits">
+                            <h4>Fruits</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Fruit</th>
+                                        <th>Quantity (kg)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td><input type="number" name="apple-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Apple">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Banana</td>
+                                        <td><input type="number" name="banana-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Banana">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Orange</td>
+                                        <td><input type="number" name="orange-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Orange">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grape</td>
+                                        <td><input type="number" name="grape-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Grape">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mango</td>
+                                        <td><input type="number" name="mango-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Mango">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strawberry</td>
+                                        <td><input type="number" name="strawberry-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Strawberry">Add to Cart</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+        
+                        
+                        <section id="vegetables">
+                            <h4>Vegetables</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Vegetable</th>
+                                        <th>Quantity (kg)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Carrot</td>
+                                        <td><input type="number" name="carrot-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Carrot">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Broccoli</td>
+                                        <td><input type="number" name="broccoli-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Broccoli">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spinach</td>
+                                        <td><input type="number" name="spinach-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Spinach">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato</td>
+                                        <td><input type="number" name="tomato-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Tomato">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cucumber</td>
+                                        <td><input type="number" name="cucumber-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Cucumber">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Potato</td>
+                                        <td><input type="number" name="potato-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Potato">Add to Cart</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+        
+                        
+                        <section id="dairy-produce">
+                            <h4>Dairy Produce</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Dairy Product</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Milk (liters)</td>
+                                        <td><input type="number" name="milk-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Milk">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cheese (grams)</td>
+                                        <td><input type="number" name="cheese-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Cheese">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yogurt (cups)</td>
+                                        <td><input type="number" name="yogurt-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Yogurt">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Butter (grams)</td>
+                                        <td><input type="number" name="butter-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Butter">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cream (liters)</td>
+                                        <td><input type="number" name="cream-quantity" min="0.5"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Cream">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cottage Cheese (grams)</td>
+                                        <td><input type="number" name="cottage-cheese-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Cottage Cheese">Add to Cart</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+        
+                        
+                        <section id="meat-seafood">
+                            <h4>Meat and Seafood</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Quantity (kg)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chicken</td>
+                                        <td><input type="number" name="chicken-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Chicken">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beef</td>
+                                        <td><input type="number" name="beef-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Beef">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salmon</td>
+                                        <td><input type="number" name="salmon-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Salmon">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shrimp</td>
+                                        <td><input type="number" name="shrimp-quantity" min="1"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Shrimp">Add to Cart</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+        
+                        
+                        <section id="baking-cooking">
+                            <h4>Baking and Cooking Ingredients</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ingredient</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Flour (grams)</td>
+                                        <td><input type="number" name="flour-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Flour">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sugar (grams)</td>
+                                        <td><input type="number" name="sugar-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Sugar">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baking Powder (grams)</td>
+                                        <td><input type="number" name="baking-powder-quantity" min="50"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Baking Powder">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Olive Oil (liters)</td>
+                                        <td><input type="number" name="olive-oil-quantity" min="0.5"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Olive Oil">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salt (grams)</td>
+                                        <td><input type="number" name="salt-quantity" min="100"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Salt">Add to Cart</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vinegar (liters)</td>
+                                        <td><input type="number" name="vinegar-quantity" min="0.5"></td>
+                                        <td><button type="button" class="add-to-cart" data-product="Vinegar">Add to Cart</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                <section id="order-summary">
+                    <h4>Order Summary</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price (LKR)</th>
+                                <th>Total (LKR)</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="summary-body">
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"><strong>Total Price</strong></td>
+                                <td id="total-price">LKR 0.00</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button type="button" id="buy-now">Buy now</button>
+                    <button type="button" id="add-to-favorites">Add to Favorite</button>
+                    <button type="button" id="apply-favorites">Apply Favorite</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>SuperMart is a leading grocery retailer with multiple branches across the city. We are committed to providing our customers with a wide range of high-quality products and exceptional service.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="dairy.html">Dairy Products</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: info@SuperMart.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SuperMart. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="order.js"></script>
+</body>
+</html>
